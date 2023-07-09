@@ -5,3 +5,5 @@ Wszystkie kody z zajęć programistycznych na UWr wykonanych na przedmiotach:
 - Metody programowania
 - Programowanie obiektowe
 - Kurs języka C++
+
+To do: wydzielić większe projekty i pracownie z plików
