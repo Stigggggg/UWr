@@ -1,0 +1,7 @@
+#lang racket
+
+; foldr-reverse uzywa append czyli doklejenia nowej listy na koniec starej
+; kiedy dodajemy nowy element, musimy przejsc przez wszystkie wczesniejsze
+; 10000 -> 10000 9999 -> 10000 9999 9998 -> ... itd
+; nieuzytkami sa wszystkie podlisty, ktore nie zwracaja wyniku (9999 list)
+; otrzymany ciag arytmetyczny consow bedzie wynosic n*(n+1)/2

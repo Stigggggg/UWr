@@ -1,0 +1,25 @@
+#lang racket
+
+;(let ([x 3])
+;  (+ x y))
+; wolne - y, związane - x (linia 4), wiążące - x (linia 3)
+
+;(let ([x 1]
+;      [y (+ x 2)])
+;    (+ x y))
+; wolne - x (linia 8), y (linia 9), związane - x (linia 9), wiążące (linia 7) 
+
+;(let ([x 1])
+;  (let ([y (+ x 2)])
+;    (* x y)))
+; zwiazane: x i y (13 i 14 linia), wiazace: x i y (linia 12)
+
+;(define (f x y)
+;  (* x y z))
+; zwiazane: x i y (linia 18), wiazace: x i y (linia 17), wolne: z
+
+(define (f x)
+  (define (g y z)
+    (* x y z))
+  (f x x x))
+; zwiazane: x i y (linia 23), x (linia 24), wiazace: x (linia 21), y (linia 22)

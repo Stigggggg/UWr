@@ -1,0 +1,11 @@
+#lang racket
+
+(define-struct leaf () #:transparent)
+(define-struct node (l elem r) #:transparent)
+
+(define (bst? x)
+  (cond ((leaf? x) #t)
+        ((node? x) (and (bst? (node-l t))
+                        (bst? (node-r t))))
+        (else #f)))
+        

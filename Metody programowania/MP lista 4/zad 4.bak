@@ -1,0 +1,12 @@
+#lang racket
+
+(define-struct leaf () #:transparent)
+(define-struct node (l elem r) #:transparent)
+
+(define (fold-tree f x t)
+  (if (leaf? t)
+      x
+      (f (node-elem t) (fold-tree f x (node-l t)) (fold-tree f x (node-r t)))))
+
+(define (flatten t)
+  (fold-tree (lambda (elem l r) (append l (cons elem r))) '() t))
