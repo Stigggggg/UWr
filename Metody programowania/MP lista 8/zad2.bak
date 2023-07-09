@@ -1,0 +1,10 @@
+#lang racket
+
+(define (mreverse! lst)
+  (define (reverse-iter prev curr)
+    (if (null? curr)
+        prev
+        (let [(next (cdr curr))]
+          (set-cdr! curr prev)
+          (reverse-iter curr next))))
+  (reverse-iter '() lst))

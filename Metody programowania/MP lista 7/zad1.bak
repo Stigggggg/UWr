@@ -1,0 +1,6 @@
+#lang plait
+
+(define-type (23tree 'v)
+  (leaf [var1 : 'v])
+  (2node [var1 : 'v] [l : (23tree 'v)] [r : (23tree 'v)])
+  (3node [var1 : 'v] [l : (23tree 'v)] [mid : (23tree 'v)] [r : (23tree 'v)]))

@@ -1,0 +1,27 @@
+#lang plait
+
+(define-type (NNF 'v)
+  (nnf-lit [polarity : Boolean] [var : 'v])
+  (nnf-conj [l : (NNF 'v)] [r : (NNF 'v)])
+  (nnf-disj [l : (NNF 'v)] [r : (NNF 'v)]))
+
+(define (neg-nnf fi)
+  (cond [(nnf-lit? fi) (nnf-lit (not (nnf-lit-polarity fi)) (nnf-lit-var fi))]
+        [(nnf-conj? fi) (nnf-disj (neg-nnf (nnf-conj-l fi)) (neg-nnf (nnf-conj-r fi)))]
+        [(nnf-disj? fi) (nnf-conj (neg-nnf (nnf-disj-l fi)) (neg-nnf (nnf-disj-r fi)))]))
+
+( define-type ( Formula 'v)
+( var [ var : 'v ])
+( neg [ f : ( Formula 'v) ])
+( conj [ l : ( Formula 'v)] [r : ( Formula 'v) ])
+( disj [ l : ( Formula 'v)] [r : ( Formula 'v) ]) )
+
+(define (to-nnf f)
+  (cond [(var? f) (nnf-lit #t f)]
+        [(neg? f) (neg-nnf (to-nnf (neg-f f)))]
+        [(conj? f) (nnf-conj (to-nnf (conj-l f)) (to-nnf (conj-r f)))]
+        [(disj? f) (nnf-disj (to-nnf (disj-l f)) (to-nnf (disj-r f)))]))
+
+(define test (disj (neg (conj (neg (var "p")) (var "q"))) (neg (var "r"))))
+
+(to-nnf test)
