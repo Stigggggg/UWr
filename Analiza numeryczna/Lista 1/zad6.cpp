@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#include<iomanip>
 using namespace std;
 
 int main()
@@ -24,6 +25,6 @@ int main()
         }
         k++;
     }
-    cout<<k<<" "<<4*pi<<endl;
+    cout<<k<<" "<<setprecision(10)<<4*pi<<endl;
     return 0;
 }
