@@ -26,20 +26,20 @@ function fib_iter(n)
 }
 
 // wersja iteracyjna
-for(let i=10; i<=1000; i++)
-{
-    console.time(i+"-ta liczba:");
-    let iter=fib_iter(i);
-    console.timeEnd(i+"-ta liczba:");
-}
-
-//wersja rekurencyjna
-// for(let i=10; i<=45; i++)
+// for(let i=10; i<=1000; i++)
 // {
 //     console.time(i+"-ta liczba:");
-//     let rek=fib_rek(i);
+//     let iter=fib_iter(i);
 //     console.timeEnd(i+"-ta liczba:");
 // }
+
+//wersja rekurencyjna
+for(let i=10; i<=45; i++)
+{
+    console.time(i+"-ta liczba:");
+    let rek=fib_rek(i);
+    console.timeEnd(i+"-ta liczba:");
+}
 
 
 

@@ -42,4 +42,6 @@ Object.defineProperty(o,"set3",{set: function(x){this.b=x;}});
 console.log(o.get3);
 o.b="coś";
 console.log(o.get3);
+o.set3=3;
+console.log(o.b);
 
