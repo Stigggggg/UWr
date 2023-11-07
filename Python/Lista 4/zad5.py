@@ -15,6 +15,7 @@ def solve(s):
     cyfry=range(10)
     for perm in itertools.permutations(cyfry,len(litery)):
         rozw=dict(zip(litery,perm))
+        print(rozw)
         if op=="+" and eval(l,rozw)+eval(r,rozw)==eval(wynik,rozw):
             return rozw
         if op=="-" and eval(l,rozw)-eval(r,rozw)==eval(wynik,rozw):
