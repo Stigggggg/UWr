@@ -1,0 +1,10 @@
+a)
+tau genders desc gamma actors.first_name; count(actors.gender)
+→ genders (actors join actors.id=roles.actor_id roles)
+
+tau genders desc γ actors.first_name; count(actors.gender) -> genders (πactors.first_name, actors.gender (actors join actors.id = roles.actor_id roles))
+
+
+
+b)
+π first_name, last_name, actors(γ director_id, first_name, last_name; count(actor_id)->actors(π director_id, first_name, last_name, actor_id (ρ director_id<-id (directors) ⨝ movies_directors ⨝ roles)))

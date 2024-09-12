@@ -1,0 +1,1 @@
+ALTER TABLE offer DROP COLUMN if_b2b;

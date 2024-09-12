@@ -7,7 +7,7 @@ public class Odcinek
     private Punkt p1,p2; 
     public Odcinek(Punkt p1, Punkt p2) //equals
     {
-        if(!Objects.equals(p1,p2))
+        if(Objects.equals(p1,p2))
         {
             throw new IllegalArgumentException("Nie mozna skonstruowac odcinka - dlugosc 0");
         }

@@ -32,7 +32,7 @@ function *fib_2()
         f1=f2;
     }
 }
-//GOD PLZ NO
+//TEGO TEZ NIE
 // var fib_generator=fib_2();
 // for(var i of fib_2())
 // {

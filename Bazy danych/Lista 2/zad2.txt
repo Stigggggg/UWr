@@ -1,0 +1,26 @@
+BAZAAAA
+R = {
+a, b, c
+
+1, 'a', 'd'
+3, 'c', 'c'
+4, 'd', 'f'
+5, 'd', 'b'
+6, 'e', 'f'
+}
+
+S = {
+x, z
+
+'ax', 1
+'bx', 2 //HANIA ZAMIEN NA 3 BO SIE WYNIK ZESRA
+'cx', 4
+'dx', 5
+'ex', 6
+}
+
+Aldżibra:
+S - (π x,z (ρ z<-a (R) ⨝ S))
+
+RRK:
+HANIA ZAPISZ TO W ZESZYCIE BO TU SIE NIE DA (ZESZYT=IPAD)

@@ -47,8 +47,13 @@ function fib_memo(f)
 // console.log(fib_rek(41));
 // console.timeEnd("n=41 rekurencja");
 
+// console.time("n=100 iteracja");
+// console.log(fib_iter(90))
+// console.timeEnd("n=100 iteracja");
+
 console.time("n=100 memoizacja");
 var fib_rek=fib_memo(fib_rek);
 console.log(fib_rek(100));
+console.log(fib_rek(90))
 console.timeEnd("n=100 memoizacja");
 

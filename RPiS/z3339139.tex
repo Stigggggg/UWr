@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Zadanie egzaminacyjne z RPiS 3}
+\author{Mikołaj Drozd 339139}
+\date{09.05.2024}
+
+\begin{document}
+
+\maketitle
+\section{Cel zadania}
+\large
+Mamy dany rozkład wykładniczy Exp($\lambda$), którego gęstość określona jest wzorem:\\
+\begin{center}
+   f(x)=$\lambda e^{-\lambda x}$ 
+\end{center}
+Musimy wyznaczyć MGF tego rozkładu, następnie oszacować $P(X \geqslant\lambda a)$ za pomocą nierówności Markova, Chebysheva i Chernoffa przy założeniu, że X $\sim$ Exp($\lambda$). Ostatnim krokiem będzie sporządzenie tabeli zawierającej wartości dokładne oraz oszacowania dla k=9, m=3, $\lambda$=13 oraz a $\in \{3,4,6,10\}$.
+
+\section{Wyznaczenie MGF}
+\Large
+$M_X(t) = E(e^{t X}) = \int_0^\infty e^{t x}  {f_X}(x)dx =\lambda \int_0^\infty e^{x(t-\lambda)}dx = \lambda \int_0^\infty e^s \frac 1 {t-\lambda}ds = \frac \lambda {t-\lambda} \int_0^\infty e^s ds = \frac \lambda {t-\lambda} e^{x (t-\lambda)}|_0^\infty$ \\ \\
+Rozpatrzmy przypadki: \\
+a) $t<\lambda$, wtedy całka jest zbieżna \\
+b) $t=\lambda$, wtedy całka jest rozbieżna, ponieważ w mianowniku mamy 0 \\
+c) $t>\lambda$, wtedy całka jest również rozbieżna, ponieważ dążymy do nieskończoności \\ \\
+Zatem dla $t<\lambda$ mamy $M_X(t) = \frac \lambda {t-\lambda} [0 - 1] = - \frac \lambda {t-\lambda} = \frac \lambda {\lambda - t}$
+
+\section{Oszacowania Markova, Chebysheva i Chernoffa}
+\Large
+\subsection{Markov}
+$P(X \geqslant\lambda a ) \leqslant \frac {E(X)} {\lambda a} = \frac {\frac 1 \lambda} {\lambda a} = \frac 1 {\lambda^2 a}$ 
+\subsection{Chebyshev}
+$P(|X - \frac 1 \lambda| \geqslant b) \leqslant \frac {V(X)} {b^2}$ \\
+$P(|X|) \geqslant b + \frac 1 \lambda) \leqslant \frac {V(X)} {b^2}$ \\
+$\lambda a = b + \frac 1 \lambda \\
+b = \lambda a - \frac 1 \lambda $\\
+Zatem: \\
+$P(X \geqslant\lambda a) \leqslant \frac {V(X)}  {(\lambda a - {\frac 1 \lambda})^2} = \frac {\frac 1 {\lambda^2}} {(\lambda a - {\frac 1 \lambda})^2} = \frac {\frac 1 {\lambda^2}} {\lambda^2 a^2 - 2 a + \frac 1 {\lambda^2}} = \frac 1 {\lambda^4 a^2 - 2 a {\lambda^2} + 1} $
+\subsection{Chernoff}
+$P(X \geqslant\lambda a) \leqslant e^{-\lambda a t} M_X(t) = e^{-\lambda a t} \frac \lambda {\lambda - t} = f(t)$
+
+\section{Wartości dokładne i oszacowania}
+\Large
+Wartość dokładna: \\
+$P(X \geqslant\lambda a) = 1 - P(X < \lambda a) = 1 - (1 - e^{-{\lambda^2} a}) = e^{-{\lambda^2} a} = e^{-169 a}$ \\ \\
+Wartość oszacowania Markova: \\
+$P(X \geqslant\lambda a ) \leqslant \frac 1 {\lambda^2 a} = \frac 1 {169 a}$ \\ \\
+Wartość oszacowania Chebysheva: \\
+$P(X \geqslant\lambda a ) \leqslant \frac 1 {28561 a^2 - 169 a + 1}$ \\ \\
+Wartość oszacowania Chernoffa (szukamy minimum wyznaczonej wyżej funkcji): \\
+$(e^{- \lambda a t} \frac \lambda {\lambda -t})' = 0 \\
+e^{- \lambda a t} (- \lambda a) \frac \lambda {\lambda - t} + e^{- \lambda a t} \frac \lambda {({\lambda - t})^2} = 0 \\
+- \lambda a + \frac 1 {\lambda - t} = 0$ \\
+Stąd $t = \lambda - \frac 1 {\lambda a} = 4 - \frac 1 {4 a}$ \\
+Czyli $P(X \geqslant\lambda a ) \leqslant e^{- \lambda a ({13 - \frac 1 {13 a}})} \frac \lambda {\lambda - (13 - \frac 1 {13 a})} = \frac {13} {\frac 1 {13 a} e^{13 a (13 - {\frac 1 {13 a}})}}$ \\ \\
+Tabela (wartości w przybliżeniu): \\
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|}
+ \hline 
+ wartość\textbackslash a & 3 & 4 & 6 & 10 \\
+ \hline\hline
+ dokładna & $e^{-507}$ & $e^{-676}$ & $e^{-1014}$ & $e^{-1690}$\\
+ \hline
+ Markov & $ \frac{1}{507}$ & $ \frac{1}{676}$ & $ \frac{1}{1014}$ & $ \frac{1}{1690}$\\
+ \hline
+ Chebyshev & $ \frac{1}{256543}$ & $ \frac{1}{456301}$ & $ \frac{1}{1027183}$ & $ \frac{1}{2854411}$\\
+ \hline
+ Chernoff & $ \frac {507}{e^{506}}$ & $ \frac{676}{e^{675}}$ & $ \frac {1014} {e^{1013}}$ & $ \frac{1690}{e^{1689}}$\\
+ \hline
+\end{tabular}
+\end{center}
+\end{document}

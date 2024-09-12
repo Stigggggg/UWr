@@ -14,7 +14,14 @@ public class Mnoz extends Oper2
     @Override
     public String toString()
     {
-        return arg+"*"+arg2;
+        if((arg instanceof Dodaj || arg instanceof Odejmij) && (arg2 instanceof Dodaj || arg2 instanceof Odejmij))
+            return"("+arg+")"+"*"+"("+arg2+")";
+        else if(arg instanceof Dodaj || arg instanceof Odejmij)
+            return "("+arg+")"+"*"+arg2.toString();
+        else if(arg2 instanceof Dodaj || arg2 instanceof Odejmij)
+            return arg.toString()+"*"+"("+ arg2+")";
+        else
+            return arg.toString()+"*"+arg2.toString();
     }
     @Override 
     public boolean equals(Object o)

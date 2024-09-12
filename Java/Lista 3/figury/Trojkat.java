@@ -7,7 +7,7 @@ public class Trojkat
     private Punkt p1,p2,p3;
     public Trojkat(Punkt p1, Punkt p2, Punkt p3)
     {
-        if(!Objects.equals(p1,p2) || !Objects.equals(p1,p3) || !Objects.equals(p3,p2))
+        if(Objects.equals(p1,p2) || Objects.equals(p1,p3) || Objects.equals(p3,p2))
         {
             throw new IllegalArgumentException("Nie mozna skonstruowac trojkata, te same punkty");
         }

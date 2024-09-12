@@ -1,0 +1,17 @@
+R = {
+a, b, c
+
+1, 'a', 'd'
+3, 'c', 'c'
+4, 'd', 'f'
+5, 'd', 'b'
+6, 'e', 'f'
+7, 'b', 'g'
+1, 'a', 'c' //HANIA JAK CHCESZ 0 REKORDOW TO WYWAL TA KOMORKE
+}
+
+Aldżibra
+σ a=a2 ∧ b=b2 ∧ c≠c2 (R ⨯ ρ a2<-a, b2<-b, c2<-c (R))
+
+RRK
+HANIA ZAPISZ W ZESZYCIE BO TU NIE MA KWANTYFIKATOROW

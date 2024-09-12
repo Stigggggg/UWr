@@ -31,7 +31,7 @@ function filter(a,f)
 
 var a=[1,2,3,4];
 
-forEach(a, _=>{console.log(_);});
+forEach(a, _=>console.log(_));
 var mapped=map(a,_=>_*2);
 console.log(mapped);
 var filtered=filter(a,_=>_<3);
