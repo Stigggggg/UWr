@@ -1,7 +1,0 @@
-Wow! Brazil is big.
-1 2 4 8 16 32
-0 -546
-66 2 DrEvil
-jdoefg
-1 4 5 3 6 2
-1001
