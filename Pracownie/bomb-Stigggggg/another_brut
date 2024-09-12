@@ -1,0 +1,12 @@
+#!/bin/bash
+> brutesecret.txt
+
+test() {
+    out=$(./bomb psol.txt <<< "$1")
+    echo $out
+}
+
+for ((i=0; i<10000; i++))
+do
+    echo "i: $i $(test $i)" >> brutesecret.txt
+done
