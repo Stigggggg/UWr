@@ -7,7 +7,7 @@
 static sigjmp_buf env;
 
 static void signal_handler(int signo) {
-  /* TODO: Something is missing here! */
+  siglongjmp(env, signo);
 }
 
 /* If interrupted by signal, returns signal number. Otherwise converts user
@@ -15,8 +15,13 @@ static void signal_handler(int signo) {
 static int readnum(int *num_p) {
   char line[MAXLINE];
   int n;
-
-  /* TODO: Something is missing here! Use Read() to get line from user. */
+  alarm(3);
+  n = sigsetjmp(env, 1);
+  if (n != 0) {
+    return n;
+  }
+  Read(STDIN_FILENO, line, MAXLINE);
+  alarm(0);
   *num_p = atoi(line);
   return 0;
 }

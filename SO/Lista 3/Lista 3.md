@@ -33,7 +33,7 @@ Na czas wpisywania hasła przez użytkownika program powinien wyłączyć echo m
 
 Edytory tekstu, takie jak vi, korzystają z trybu niekanonicznego, ponieważ muszą przetwarzać każdy pojedynczy znak zaraz po jego wprowadzeniu. 
 
-**Tryb niekanoniczny** - w nim terminal nie buforuje pełnej linii, co pozwala na natychmiastową reakcję na wpisywanie przez użytkownika, znaki takie jak ctrl+d albo ctrl+c mogą być interpretowane w specjalny sposó przez edytor.
+**Tryb niekanoniczny** - w nim terminal nie buforuje pełnej linii, co pozwala na natychmiastową reakcję na wpisywanie przez użytkownika, znaki takie jak ctrl+d albo ctrl+c mogą być interpretowane w specjalny sposób przez edytor.
 
 ## Zad. 3
 
@@ -64,12 +64,17 @@ Sygnał TERM służy do zmiany rozmiaru okna, nowy rozmiar wczytujemy procedurą
 
 https://en.wikipedia.org/wiki/ANSI_escape_code
 
+```
+echo -e "\033[A"; read - przesuwanie kursora w prawo
+echo -e "\033[10C"; read - przesuwanie w górę
+echo -e "\033[32mZielony tekst\033[0m"; read - zmiana koloru tekstu
+```
+
 Różnica w zachowaniu wynika z faktu, że powłoka (np. bash) pracuje w trybie niekanonicznym, co pozwala jej na natychmiastowe reagowanie na znaki klawiszy funkcyjnych i sterujących (strzałek, F1-F12, itp.). W tym trybie terminal nie czeka na zakończenie linii ani nie buforuje wejścia. Natomiast program `cat` działa w trybie kanonicznym, w którym terminal buforuje dane wejściowe i nie interpretuje sekwencji sterujących ani klawiszy funkcyjnych. Dlatego zamiast interpretować naciśnięcia klawiszy jako polecenia (jak robi to powłoka), cat po prostu wyświetla surowe sekwencje znaków wysyłane przez te klawisze.
 
 ## Zad. 5
 
-1.  
-    - sleep 1000
+1.  - sleep 1000
     - CTRL+Z (SIGSTP)
     - bg
 2.  - find /
