@@ -14,4 +14,6 @@ BEGIN
 END;
 
 SET IDENTITY_INSERT Egzemplarz ON;
-INSERT INTO Egzemplarz (Egzemplarz_ID, Sygnatura, Ksiazka_ID) VALUES (42, 'E1', 6), (43, 'E2', 6), (44, 'E3', 6), (45, 'E4', 6);
+INSERT INTO Egzemplarz (Egzemplarz_ID, Sygnatura, Ksiazka_ID) VALUES (47, 'E7', 6);
+
+DELETE FROM Egzemplarz WHERE Ksiazka_ID = 6;

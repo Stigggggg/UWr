@@ -1,5 +1,7 @@
 --PRZEROBIC
 
+DROP TABLE IF EXISTS SalesLT.Cost_Price;
+
 CREATE TABLE SalesLT.Cost_Price (
 	ProductID INT,
 	StandardCost DECIMAL(18,4),
@@ -9,7 +11,9 @@ CREATE TABLE SalesLT.Cost_Price (
 	FOREIGN KEY (ProductID) REFERENCES SalesLT.Product(ProductID)
 );
 
-CREATE TRIGGER change
+DROP TRIGGER IF EXISTS change;
+
+CREATE OR ALTER TRIGGER change
 ON SalesLT.Product
 AFTER UPDATE AS
 BEGIN

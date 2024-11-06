@@ -12,5 +12,5 @@ BEGIN
 END;
 
 UPDATE SalesLT.Customer
-SET FirstName = 'Robert', LastName = 'Lewandowski'
+SET FirstName = 'Robert', LastName = 'Kubica'
 WHERE CustomerID = 1;

@@ -1,10 +1,9 @@
 SELECT * INTO SalesLT.Product_Backup
 FROM SalesLT.Product;
 
-SET IDENTITY_INSERT SalesLT.Product_Backup ON;
-
 --standard SQL query
 TRUNCATE TABLE SalesLT.Product_Backup;
+SET IDENTITY_INSERT SalesLT.Product_Backup ON;
 DECLARE @t1 DATETIME;
 DECLARE @t2 DATETIME;
 SET @t1 = GETDATE();
@@ -37,5 +36,5 @@ DEALLOCATE c;
 SET @t4 = GETDATE();
 SELECT DATEDIFF(MILLISECOND, @t3, @t4) AS time_2;
 
---time_1 = 3
+--time_1 = 6
 --time_2 = 40
