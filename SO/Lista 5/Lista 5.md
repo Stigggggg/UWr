@@ -1,7 +1,7 @@
 ## Zad. 1
 
 Jeśli bufor jest pusty:
-- read będzie blokować dd momentu, aż pojawią się dostępne dane,
+- read będzie blokować do momentu, aż pojawią się dostępne dane,
 - write wyśle SIGPIPE procesowi wołającemu
 
 Jeśli bufor jest pełny:
@@ -36,7 +36,7 @@ Drugi i trzeci parametr ioctl:
 
 Dodawanie pliku - przeglądamy katalog (liniowo), sprawdzamy czy plik już tam jest, jak nie to kompaktowanie,
 
-Usuwanie pliku - to samo w sumie, jeśli przed lub po usuwanym pliku są nieużytki, to długość wpisu przesuwana jest na koniec nieużytków,
+Usuwanie pliku - to samo w sumie, jeśli przed lub po usuwanym pliku są nieużytki, to długość wpisu przesuwana jest na koniec nieużytków, zwiększa się record size, a do nazwy wpisywane jest `\0`,
 
 **Nieużytek** - nieużywany fragment reprezentacji katalogu, rozmiar wpisu, po którym występuje nieużytek jest większy od nazwy pliku,
 
