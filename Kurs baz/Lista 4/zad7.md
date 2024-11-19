@@ -1,0 +1,3 @@
+**Optimistic locking** - we read a record, take note of a version number (or date, timestamp etc.) and check if the versiion hasn't changed before we write the record back. If the record is different, we can abort the transcation or edit it by ourselves (for example git conflict resolver).
+
+**Pessimistic locking** - we lock the record for the exclusive use until we finish with it. It has much better integrity, but we need to be careful to avoid deadlocks (for example editing documents that we don't want to let other edit).
