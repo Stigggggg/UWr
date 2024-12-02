@@ -1,20 +1,41 @@
-SET STATISTICS TIME ON;
-SET SHOWPLAN_ALL ON;
+--clustered index - determines the physical order of rows in a table
+--a table can have only one clustered index, usually it is a primary key
 
---there is a clustered index - its primary key, so it doesn't work
-DROP INDEX IDX_clustered ON Ksiazka;
-CREATE CLUSTERED INDEX IDX_clustered ON Ksiazka (Ksiazka_ID, Rok_Wydania DESC, Tytul ASC);
+--nonclustered index - doesnt change the table's physical order but maintains
+--a separate structure pointing to the data
 
-DROP INDEX IDX_nonclustered ON Egzemplarz;
-CREATE NONCLUSTERED INDEX IDX_nonclustered ON Egzemplarz (Ksiazka_ID);
+--covering index - can satisfy all requested columns in a query
+--without performing a further lookup into the clustered index
 
-DROP INDEX IDX_covering ON Ksiazka;
-CREATE NONCLUSTERED INDEX IDX_covering ON Ksiazka (Autor) INCLUDE (Tytul);
+DROP INDEX IDX_nonclustered ON Ksiazka;
+DROP INDEX IDX_nonclustered2 ON Egzemplarz;
+DROP INDEX IDX_covering ON Egzemplarz;
 
-SELECT k.Tytul, e.Egzemplarz_ID, e.Sygnatura
-FROM Ksiazka k
-JOIN Egzemplarz e ON k.Ksiazka_ID = e.Ksiazka_ID
-WHERE k.Autor = 'Helen Feddema'
+SELECT Autor
+FROM Ksiazka
+JOIN Egzemplarz ON Egzemplarz.Ksiazka_ID = Ksiazka.Ksiazka_ID
+WHERE Autor = 'Helen Feddema'
 
-SET STATISTICS TIME OFF;
-SET SHOWPLAN_ALL OFF;
+CREATE NONCLUSTERED INDEX IDX_nonclustered ON Ksiazka(Autor);
+
+SELECT Autor
+FROM Ksiazka
+JOIN Egzemplarz ON Egzemplarz.Ksiazka_ID = Ksiazka.Ksiazka_ID
+WHERE Autor = 'Helen Feddema'
+
+CREATE NONCLUSTERED INDEX IDX_nonclustered2 ON Egzemplarz(Ksiazka_ID);
+
+SELECT Autor
+FROM Ksiazka
+JOIN Egzemplarz ON Egzemplarz.Ksiazka_ID = Ksiazka.Ksiazka_ID
+WHERE Autor = 'Helen Feddema'
+
+CREATE NONCLUSTERED INDEX IDX_covering ON Egzemplarz(Ksiazka_ID, Sygnatura)
+INCLUDE (Egzemplarz_ID);
+
+SELECT Autor, Sygnatura
+FROM Ksiazka
+JOIN Egzemplarz ON Egzemplarz.Ksiazka_ID = Ksiazka.Ksiazka_ID
+WHERE Autor = 'Helen Feddema'
+
+
