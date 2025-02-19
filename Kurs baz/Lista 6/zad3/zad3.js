@@ -51,7 +51,7 @@ async function run() {
             },
             {
                 _id: "book2",
-                title: "Kordian",
+                title: 10,
                 author: "Juliusz Słowacki",
                 copies: [
                     { 

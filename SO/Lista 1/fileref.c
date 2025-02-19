@@ -13,7 +13,7 @@ static void do_read(int fd) {
   pid = Fork();
   if (pid == 0) {
     Read(fd, buf, 25);
-    printf("%d: %ld\n", pid, Lseek(fd, 0, SEEK_CUR));
+    printf("Parent: %ld\n", Lseek(fd, 0, SEEK_CUR));
   }
   else {
     Read(fd, buf, 25);

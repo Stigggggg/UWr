@@ -16,7 +16,7 @@
 
 Wyjątek procesora nie oznacza błędu czasu wykonania programu, gdy jest obsługiwany przez program, a nie przez system operacyjny. 
 
-Pułapka jest generowanaw wyniku prawidłowej pracy programu np. przy wykonywaniu syscalla.
+Pułapka jest generowana w wyniku prawidłowej pracy programu np. przy wykonywaniu syscalla.
 
 ## Zad. 2
 Do **obsługi przerwań** wykorzystywany jest **wektor przerwań**, będący tablicą indeksów przerwań. Gdy występuje sygnał przerwania, procesor zatrzymuje dany proces i przerzuca się na inny. Wartości w wektorze wskazują na początek odpowiedniej **procedury obsługi przerwania**. Przed pobraniem pierwszej instrukcji procedury obsługi przerwania, system zapisuje potrzebne informacje (np. nr indeksu, żeby móc potem wznowić przerwany proces) i przełącza tryb działania. Gdy natrafimy na instrukcję powrotu z przerwania, przełączamy tryb z powrotem i wracamy do poprzedniego procesu poprzez indeks jego obsługi zapisany w wektorze. Procedury te powinny być wykonywane w **trybie jądra**, ponieważ pozwala on na dużo więcej działań w systemie niż tryb użytkownika, np. możemy czytać z pamięci lub do niej zapisywać. Należy korzystać ze stosu jądra, ponieważ stos użytkownika może należeć do innego procesu, przez co wartość stack pointera może być nieprawidłowa, co spowoduje problem przy zapisywaniu, z kolei w trybie jądra jest większa szansa, że wskaźnik będzie wskazywał na stronę dostępną w pamięci i będzie miał prawidłową wartość.
