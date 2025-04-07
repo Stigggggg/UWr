@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box; /*padding i border wliczane do rozmiarów elementu*/
+}
+
+body { /*default margin i padding pomaga w ustawianiu elementów*/
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.blog__header {
+    margin: 0;
+}
+
+.content__main {
+    background-color: #ececf7;
+    padding: 1rem 2rem;
+}
+
+.main_header {
+    background-color: white;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 2rem;
+    display: flex; 
+    justify-content: space-between; /*rozkłada elementy równomiernie w poziomie*/
+    align-items: center; /*wyrównuje w pionie*/
+    position: sticky; /*przykleja nagłówek do góry strony przy przewijaiu*/
+    top: 0; /*potrzebne żeby sticky działało*/
+    z-index: 1; /*zapewnia że nagłówek będzie nad body*/
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /*elementy listy w jednej linii*/
+}
+
+.navigation__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation__link:hover {
+    background-color: #f1f1f1;
+}
+
+.blog article {
+    overflow: hidden; 
+}
+
+.blog article img {
+    height: auto;
+}
+
+.blog article:first-of-type img,
+.blog article:last-of-type img {
+    float: right; /*opływanie z prawej strony*/
+    margin: 0 0 1rem 1rem;
+}
+
+.blog article:nth-of-type(2) img {
+    float: left; /*to samo z lewej*/
+    margin: 0 1rem 1rem 0;
+}
+
+.blog article:first-of-type figure,
+.blog article:last-of-type figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.blog article:nth-of-type(2) figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    float: left;
+    margin: 0 0 1rem 1rem;
+}
+
+.warning {
+    background-color: #f4c5b7;
+    border: 3px solid #faf9f8;
+    border-radius: 20px;
+    padding: 1rem;
+    overflow: hidden; 
+}
+
+.warning h3 {
+    text-align: center;
+}
+
+.warning img {
+    float: left;
+    margin-right: 1rem;
+}
+
+.warning strong {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gallery__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*trzy kolumny*/
+    grid-template-rows: repeat(2, 1fr); /*dwa wiersze*/
+    gap: 1rem;
+}
+
+.gallery__image:nth-child(1) {
+    grid-column: 1; 
+    grid-row: span 2;
+} /* zajmuje 1 kolumnę i 2 wiersze */
+
+.gallery__image:nth-child(2) {
+    grid-column: 3; /*prawy górny*/
+    grid-row: 1;
+}
+
+.gallery__image:nth-child(3) {
+    grid-column: 2 / span 2; /*dwie kolumny w drugim wierszu*/
+    grid-row: 2;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*dopasowanie bez zniekształceń*/
+}
+
+.posts__wrapper {
+    position: relative;
+    height: 300px;
+}
+
+.post__container {
+    position: absolute; /*ustawienie względem nearest positioned ancestor*/
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: z-index 0.3s ease-in-out;
+}
+
+.post__container:first-child {
+    left: 0;
+    z-index: 1;
+}
+
+.post__container:last-child {
+    left: 250px;
+    top: 100px;
+    z-index: 0;
+}
+
+.post__container:last-child:hover {
+    z-index: 1; /*najechanie sprawia, że to on jest z przodu*/
+}
+
+.post__image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post__subtitle {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+}
+
+.post__info {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+
+
+
+
+

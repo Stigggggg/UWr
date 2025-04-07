@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2_test\\zad2_test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2\\zad2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2\\zad2.csproj",
+        "projectName": "zad2",
+        "projectPath": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2\\zad2.csproj",
+        "packagesPath": "C:\\Users\\mikid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mikid\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2_test\\zad2_test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2_test\\zad2_test.csproj",
+        "projectName": "zad2_test",
+        "projectPath": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2_test\\zad2_test.csproj",
+        "packagesPath": "C:\\Users\\mikid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2_test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mikid\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2\\zad2.csproj": {
+                "projectPath": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\POO\\Lista 4\\zad2\\zad2.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

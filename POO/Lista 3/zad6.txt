@@ -1,0 +1,5 @@
+SRP tells us that you should only have a single responsibility in a module.
+ISP tells us that you should not be forced to be confronted with more than you actually need. If you want to use a print() method from interface I, you shouldn't have to instantiate a SwimmingPool or a DriveThru class for that.
+More concretely, and going straight to the point, they are different views on the same idea -- SRP is more focused on the designer-side point-of-view, while ISP is more focused on the client-side point-of-view.
+
+SRP - podział obowiązków, ISP - unika zbędnych metod

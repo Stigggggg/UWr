@@ -1,0 +1,12 @@
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\zad3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\zad3.AssemblyInfoInputs.cache
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\zad3.AssemblyInfo.cs
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\zad3.csproj.CoreCompileInputs.cache
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\zad3.sourcelink.json
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\bin\Debug\net8.0\zad3.deps.json
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\bin\Debug\net8.0\zad3.dll
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\bin\Debug\net8.0\zad3.pdb
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\zad3.dll
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\refint\zad3.dll
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\zad3.pdb
+C:\Users\mikid\OneDrive\Pulpit\Studia\UWr\POO\Lista 4\zad3\obj\Debug\net8.0\ref\zad3.dll

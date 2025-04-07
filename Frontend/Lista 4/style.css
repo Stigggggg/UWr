@@ -1,0 +1,116 @@
+html {
+    font-size: clamp(14px, 1vw + 0.5rem, 18px); /*minimum, wartość rozszerzania, maksimum*/
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(#6a11cb, #2575fc);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact__card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact__title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact__group--row {
+    display: flex;
+    gap: 0.75rem; 
+}
+
+.contact__group--row .contact__group {
+    flex: 1; 
+}
+
+.contact__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__group label {
+    margin-bottom: 0.25rem;
+}
+
+.contact__group input,
+.contact__group select,
+.contact__group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.contact__group input:invalid,
+.contact__group select:invalid,
+.contact__group textarea:invalid {
+    border-color: red;
+}
+
+.contact__group--checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: row;
+}
+
+.contact__group--checkbox input {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+#message {
+    height: 80px;
+    resize: none;
+}
+
+.contact__submit {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact__submit:hover {
+    background: #5a0dab;
+}
+
+@media (pointer: coarse) {
+    .contact__group--checkbox input {
+      width: 1.75em;
+      height: 1.75em;
+    }
+}

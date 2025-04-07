@@ -1,0 +1,27 @@
+@startuml
+interface ICommand {
+    +Execute(CommandName: string) : void
+}
+
+abstract class AbstractCommand {
+    -commandCount : int
+    #commandState : string
+    #commandName : string
+    -commandBuilder() : void
+    +Execute(CommandName: string) : void
+}
+
+class ConcreteCommand {
+    #commandBuilder : CommandStepBuilder
+    +Execute(CommandName: string) : void
+}
+
+class CommandStepBuilder {
+    +MAXSTEPS : int
+    +StepCount : int
+}
+
+ICommand <|.. AbstractCommand
+AbstractCommand <|-- ConcreteCommand
+ConcreteCommand o-- CommandStepBuilder
+@enduml

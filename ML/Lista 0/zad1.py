@@ -16,13 +16,15 @@ dVec = np.array(list("Hello"))
 # c)
 aMat = np.full((9, 9), 2)
 bMat = np.diag(np.concatenate((np.arange(1, 6), np.arange(4, 0, -1))))
+print(bMat)
 cMat = np.arange(1, 101).reshape((10, 10)).T
-dMat = np.full((3, 4), np.NaN)
+dMat = np.full((3, 4), np.nan)
 eMat = np.array(([13, -1, 5], [-22, 10, -87]))
 fMat = np.floor(np.random.rand(3, 3) * 6 - 3)
 
 # d)
 multMat = np.outer(np.arange(0, 10), np.arange(0, 10))
+print(multMat)
 
 # e)
 xVec = (1 / np.sqrt(2 * np.pi * 2.5 ** 2)) * np.exp(-(cVec ** 2) / (2 * np.pi * 2.5 ** 2))

@@ -1,0 +1,19 @@
+Interface Segregation Principle - klient nie powinien być zmuszany do zależności od metod, których nie używa
+
+Przykład: https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.identity.iuserstore-1?view=aspnetcore-9.0
+
+Wyjaśnienie: jeśli używamy uwierzytelniania opartego na zewn. dostawcach (jak google, facebook), to możemy pozbyć się CreateAsync/DeleteAsync
+
+Propozycja:
+public interface IUserReader<TUser> {
+    Task<TUser> FindByIdAsync(string userId, CancellationToken cancellationToken);
+    Task<TUser> FindByNameAsync(string normalizedUserName, CancellationToken cancellationToken);
+}
+
+public interface IUserWriter<TUser> {
+    Task CreateAsync(TUser user, CancellationToken cancellationToken);
+    Task UpdateAsync(TUser user, CancellationToken cancellationToken);
+    Task DeleteAsync(TUser user, CancellationToken cancellationToken);
+}
+
+public interface IUserStore<TUser> : IUserReader<TUser>, IUserWriter<TUser> { }
