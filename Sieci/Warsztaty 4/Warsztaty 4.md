@@ -153,3 +153,14 @@ sudo ip addr add 192.168.0.2/24 dev enp-loc1
 ```
 
 ![alt text](image-17.png)
+
+Faktycznie, działa. W zapytaniu pakiet najpierw ma adres sieci wewn., w tym przypadku 172.18.0.2, reguła SNAT zmienia go w 10.0.2.15, stąd 2 pakiety.
+W odpowiedzi odwrotnie, jak na zdjęciu:
+
+![alt text](image-18.png)
+
+Po pingnięciu V2, requesty docierają, ale bez odpowiedzi, bo nie wiadomo kto ma adres 10.0.2.15
+
+![alt text](image-19.png)
+
+
