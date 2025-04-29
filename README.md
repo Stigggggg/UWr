@@ -43,6 +43,8 @@ Slot machine made in Python: https://github.com/Stigggggg/projekt-zespol-13-MD
 
 Unity Course repository: https://github.com/Stigggggg/UnityCourse
 
+Shell made as a project for Operating Systems: https://github.com/Stigggggg/Shell
+
 Basic Blockchain made for Innovative Projects by Nokia: https://github.com/B-Borecki/B2MBlockchain
 
 Traceroute made as a project for Computer Networks: https://github.com/Stigggggg/Traceroute
