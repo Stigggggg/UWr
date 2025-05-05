@@ -1,7 +1,4 @@
 import sys
-import subprocess
-import time
-
 
 def V(i,j):
     return 'V%d_%d' % (i,j)
@@ -24,17 +21,16 @@ def horizontal():
 def vertical():
     return [all_different(get_column(j)) for j in range(9)]
 
-def square():
-    squares = []
-    for x in range(0, 9, 3):
-        for y in range(0, 9, 3):
-            square = []
+def blocks():
+    result = []
+    for bi in range(3):
+        for bj in range(3):
+            block = []
             for i in range(3):
                 for j in range(3):
-                    square.append(V(x+i, y+j))
-            squares.append(all_different(square))
-    return squares
-    
+                    block.append(V(3 * bi + i, 3 * bj + j))
+            result.append(all_different(block))
+    return result
 
 def print_constraints(Cs, indent, d):
     position = indent
@@ -55,7 +51,7 @@ def sudoku(assigments):
     print ('solve([' + ', '.join(variables) + ']) :- ')
     
     
-    cs = domains(variables) + vertical() + horizontal() + square()
+    cs = domains(variables) + vertical() + horizontal() + blocks()
     for i,j,val in assigments:
         cs.append( '%s #= %d' % (V(i,j), val) )
     
@@ -68,19 +64,16 @@ def sudoku(assigments):
 if __name__ == "__main__":
     raw = 0
     triples = []
-    inputFile = open('zad_input.txt', 'r')
-    with open('zad_output.txt', 'w') as sys.stdout:
-    
-        for x in inputFile.readlines():
+    with open('zad_input.txt', 'r', encoding='utf-8') as fin, open('zad_output.txt', 'w', encoding='utf-8') as sys.stdout:
+        for x in fin:
             x = x.strip()
             if len(x) == 9:
                 for i in range(9):
                     if x[i] != '.':
                         triples.append( (raw,i,int(x[i])) ) 
-                raw += 1    
+                raw += 1          
         sudoku(triples)
-    
-    inputFile.close()
+    fin.close()
     
 """
 89.356.1.
@@ -111,4 +104,4 @@ if __name__ == "__main__":
 ......719
 ........6
 2.7...3..
-"""     
+"""    

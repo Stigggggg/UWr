@@ -1,7 +1,8 @@
 import itertools
 from collections import deque
+from functools import lru_cache
 
-# Generujemy wszystkie możliwe linie długości length, które spełniają pattern
+# generujemy wszystkie możliwe linie długości length, które spełniają pattern
 def generate_possible_lines(length, pattern, current_line):
     results = []
 
@@ -51,6 +52,7 @@ def update_board_from_domain(board, idx, domain, axis):
                     updated = True
     return updated
 
+@lru_cache(maxsize=None)
 def ac3(board, row_req, col_req):
     n, m = len(board), len(board[0])
     row_domains = [set(tuple(line) for line in generate_possible_lines(m, row_req[i], board[i])) for i in range(n)]
