@@ -1,0 +1,44 @@
+P0: MCTS, P1: alpha-beta
+Wyniki:
+P1 WON
+P1 WON
+P0 WON
+P1 WON
+P0 WON
+Killing subprocess.
+Killing subprocess.
+P0 won-tied-lost 2-0-3 times.
+
+P0: alpha-beta, P1: MCTS
+Wyniki:
+P1 WON
+P1 WON
+P0 WON
+P1 WON
+P1 WON
+Killing subprocess.
+Killing subprocess.
+P0 won-tied-lost 1-0-4 times.
+
+PO OGRANICZENIU CZASU MINMAXA
+
+P0: alpha-beta, P1: MCTS
+Wyniki:
+P1 WON
+P0 WON
+P1 WON
+P0 WON
+DRAW
+Killing subprocess.
+Killing subprocess.
+P0 won-tied-lost 2-1-2 times.
+
+P0: MCTS, P1: alpha-beta
+P0 WON
+P1 WON
+P0 WON
+P0 WON
+P1 WON
+Killing subprocess.
+Killing subprocess.
+P0 won-tied-lost 3-0-2 times.
