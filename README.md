@@ -29,11 +29,17 @@ This repository contains solutions for the exercises I've done during my educati
   - Kurs projektowania gier w silniku Unity (Unity Course)
   - Kurs projektowania aplikacji z bazami danych (Database Applications Development Course)
   - Innovative Projects by Nokia
-- 6th semester (in progress):
+- 6th semester:
+  - Algorytmy i struktury danych (podejście 2)
   - Sztuczna inteligencja (Artificial Intelligence)
   - Sieci komputerowe (Computer Networks)
   - Projektowanie obiektowe oprogramowania (Object Oriented Software Development)
   - Kurs projektowania aplikacji frontendowych (Frontend Course)
+- 7th semester (in progress):
+  - Matematyka dyskretna M (Discrete Mathematics (Master level))
+  - Systemy wbudowane (Embedded Systems)
+  - Kurs projektowania aplikacji ASP.NET (ASP.NET Course)
+  - Seminarium: Implementacja interfejsów użytkownika (Seminar: User Interface Implementation)
 
 Snake game made in Java for OOP: https://github.com/Stigggggg/Snake/tree/main
 
