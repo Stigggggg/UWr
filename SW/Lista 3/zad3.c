@@ -18,9 +18,9 @@ void adc_init()
 
 uint8_t exp_tab[256];
 
-void exp_func_init() {
+void exp_func_init() { // funkcja PWM (i*i)>>8
     for (int i = 0; i < 256; i++) {
-        exp_tab[i] = (i * i) >> 8;
+        exp_tab[i] = (i * i) >> 8; // skaluje do zakresu od 0 do 255
     }
 }
 
@@ -35,19 +35,20 @@ int main() {
         ADCSRA |= _BV(ADSC); // wykonaj konwersję
         while (!(ADCSRA & _BV(ADIF))); // czekaj na wynik
         ADCSRA |= _BV(ADIF); // wyczyść bit ADIF (pisząc 1!)
-        uint16_t v = ADC; // weź zmierzoną wartość (0..1023)
-        uint8_t level = v >> 2;
-        uint8_t log = exp_tab[level];
+        uint16_t v = ADC; // weź zmierzoną wartość (0...1023)
+        uint8_t level = v >> 2; //przeskalowujemy z 0...1023 na 0...255
+        uint8_t log = exp_tab[level]; //bierzemy skorygowaną wartość z tablicy
 
-        for (int i = 0; i < 255; i++) {
-            if (i < log) {
+        for (int i = 0; i < 255; i++) { // jedna klatka podzielona na 255 części
+            if (i < log) { // przez pewien procent czasu (wartość z tablicy) led włączony
                 LED_PORT |= (1 << PB5);
-            } else {
+            } else { // przez resztę wyłączony, im większy procent tym jaśniej świeci
                LED_PORT &= ~(1 << PB5); 
             }
             _delay_us(100);
         }
     }
+    // wiedza stąd: https://www.hibit.dev/posts/30/what-is-pwm-and-how-it-works
 }
 
 
