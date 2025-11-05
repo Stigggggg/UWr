@@ -56,24 +56,34 @@ int main()
   stdin = stdout = stderr = &uart_file;
   // zainicjalizuj ADC
   adc_init();
-  // mierz napięcie
+  LED_DDR |= (1 << PB5);
   while(1) {
-    ADCSRA |= _BV(ADSC); // wykonaj konwersję
-    while (!(ADCSRA & _BV(ADIF))); // czekaj na wynik
-    ADCSRA |= _BV(ADIF); // wyczyść bit ADIF (pisząc 1!)
-    uint16_t v = ADC; // weź zmierzoną wartość (0..1023)
-    // Vin = 1.1V, Vref = Vcc
-    // zatem Vcc = 1.1 * 1023 / ADC
+    // ADCSRA |= _BV(ADSC); // wykonaj konwersję
+    // while (!(ADCSRA & _BV(ADIF))); // czekaj na wynik
+    // ADCSRA |= _BV(ADIF); // wyczyść bit ADIF (pisząc 1!)
+    // uint16_t v = ADC; // weź zmierzoną wartość (0..1023)
+    // // Vin = 1.1V, Vref = Vcc
+    // // zatem Vcc = 1.1 * 1023 / ADC
     // float vcc = (1.1 * 1023.0) / v;
     // printf("Napięcie: %.2f V\r\n", vcc);
     // _delay_ms(100);
     // teraz z diodą
-    LED_DDR |= (1 << PB5);
+    LED_PORT &= ~(1 << PB5);  
+    _delay_ms(50);            
+    ADCSRA |= _BV(ADSC);
+    while (!(ADCSRA & _BV(ADIF)));
+    ADCSRA |= _BV(ADIF);
+    uint16_t v = ADC;
     float vcc = (1.1 * 1023.0) / v;
-    printf("Napięcie z diodą: %.2f V\r\n", vcc);
-    LED_PORT |= (1 << PB5);
-    _delay_ms(500);
-    LED_PORT &= ~(1 << PB5);
+    printf("Dioda wyłączona: %.2f V\r\n", vcc);
+    LED_PORT |= (1 << PB5);   
+    _delay_ms(50);            
+    ADCSRA |= _BV(ADSC);
+    while (!(ADCSRA & _BV(ADIF)));
+    ADCSRA |= _BV(ADIF);
+    v = ADC;
+    vcc = (1.1 * 1023.0) / v;
+    printf("Dioda włączona:  %.2f V\r\n", vcc);
     _delay_ms(500);
   }
 }
