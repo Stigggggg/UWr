@@ -3,23 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\print.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|solutionrelative:print.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\print.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|solutionrelative:print.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 2\\zad4\\start.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|solutionrelative:start.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 2\\zad4\\start.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\start.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|solutionrelative:start.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 2\\zad4\\print.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|solutionrelative:print.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 2\\zad4\\print.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|solutionrelative:print.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 2\\zad4\\start.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\start.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD48CCA-5FB2-476F-812C-18FA09E61ED3}|zad4.csproj|solutionrelative:start.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,24 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "print.aspx.cs",
               "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\print.aspx.cs",
               "RelativeDocumentMoniker": "print.aspx.cs",
               "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\print.aspx.cs",
               "RelativeToolTip": "print.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T22:56:43.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "print.aspx",
               "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\print.aspx",
               "RelativeDocumentMoniker": "print.aspx",
@@ -60,20 +60,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "start.aspx.cs",
               "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\start.aspx.cs",
               "RelativeDocumentMoniker": "start.aspx.cs",
               "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\start.aspx.cs",
               "RelativeToolTip": "start.aspx.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAArwCcAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T21:47:22.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "start.aspx",
               "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 2\\zad4\\start.aspx",
               "RelativeDocumentMoniker": "start.aspx",
@@ -94,8 +94,7 @@
               "RelativeToolTip": "start.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T21:48:12.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T21:48:12.228Z"
             }
           ]
         }

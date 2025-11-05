@@ -11,7 +11,7 @@ namespace zad4
         {
             if (!IsPostBack)
             {
-                tasks.DataSource = new int[10]; // 10 pól na zadania
+                tasks.DataSource = new int[10];
                 tasks.DataBind();
             }
         }
@@ -20,27 +20,27 @@ namespace zad4
         {
             label.Text = "";
 
-            // 1) Walidacja pól
             if (string.IsNullOrWhiteSpace(name.Text))
             {
-                label.Text = "Pole 'Imię i nazwisko' nie może być puste.";
+                label.Text = "Musisz podać imię i nazwisko!";
                 return;
             }
 
             if (!DateTime.TryParse(date.Text, out _))
             {
-                label.Text = "Pole 'Data' musi być poprawną datą (np. 2025-01-15).";
+                label.Text = "Podaj poprawną datę! (np. 2025-01-15).";
                 return;
             }
 
-            // 2) Walidacja punktów
             string[] taskPoints = new string[tasks.Items.Count];
             for (int i = 0; i < tasks.Items.Count; i++)
             {
                 TextBox txt = tasks.Items[i].FindControl("points") as TextBox;
                 string val = txt.Text.Trim();
-                if (val == "") val = "0";
-
+                if (val == "")
+                {
+                    val = "0";
+                }
                 if (!int.TryParse(val, out int pts) || pts < 0)
                 {
                     label.Text = $"Nieprawidłowa liczba punktów w zadaniu {i + 1}.";
@@ -51,7 +51,6 @@ namespace zad4
 
             string pointsCsv = string.Join(",", taskPoints);
 
-            // 3) Przekierowanie z danymi w QueryString
             string url = $"print.aspx?name={Server.UrlEncode(name.Text)}" +
                          $"&date={Server.UrlEncode(date.Text)}" +
                          $"&course={Server.UrlEncode(course.Text)}" +

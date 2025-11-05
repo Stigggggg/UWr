@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="start.aspx.cs" Inherits="zad4.Start" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="start.aspx.cs" Inherits="zad4.start" %>
 
 <!DOCTYPE html>
 <html>

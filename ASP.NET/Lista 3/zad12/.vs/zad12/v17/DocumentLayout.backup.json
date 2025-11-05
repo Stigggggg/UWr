@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E477D9A9-803F-4B5F-808A-686EEB053CFE}|zad12.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 3\\zad12\\cookies.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E477D9A9-803F-4B5F-808A-686EEB053CFE}|zad12.csproj|solutionrelative:cookies.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E477D9A9-803F-4B5F-808A-686EEB053CFE}|zad12.csproj|C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\cookies.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E477D9A9-803F-4B5F-808A-686EEB053CFE}|zad12.csproj|solutionrelative:cookies.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E477D9A9-803F-4B5F-808A-686EEB053CFE}|zad12.csproj|C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\cookies.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E477D9A9-803F-4B5F-808A-686EEB053CFE}|zad12.csproj|solutionrelative:cookies.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E477D9A9-803F-4B5F-808A-686EEB053CFE}|zad12.csproj|C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\reverse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E477D9A9-803F-4B5F-808A-686EEB053CFE}|zad12.csproj|solutionrelative:reverse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cookies.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\cookies.aspx.designer.cs",
+              "RelativeDocumentMoniker": "cookies.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\cookies.aspx.designer.cs",
+              "RelativeToolTip": "cookies.aspx.designer.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwDIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T22:10:38.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "cookies.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\cookies.aspx.cs",
+              "RelativeDocumentMoniker": "cookies.aspx.cs",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\cookies.aspx.cs",
+              "RelativeToolTip": "cookies.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T21:51:10.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cookies.aspx",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\cookies.aspx",
+              "RelativeDocumentMoniker": "cookies.aspx",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\cookies.aspx",
+              "RelativeToolTip": "cookies.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-01T21:50:28.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "reverse.aspx",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\reverse.aspx",
+              "RelativeDocumentMoniker": "reverse.aspx",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad12\\reverse.aspx",
+              "RelativeToolTip": "reverse.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-01T21:30:48.384Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

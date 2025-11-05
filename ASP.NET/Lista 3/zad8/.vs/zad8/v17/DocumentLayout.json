@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 3\\zad8\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 3\\zad8\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 3\\zad8\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|solutionrelative:default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 3\\zad8\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|solutionrelative:login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 3\\zad8\\default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|solutionrelative:default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|c:\\users\\mikid\\onedrive\\pulpit\\studia\\uwr\\asp.net\\lista 3\\zad8\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C69AA4B7-CCB2-421B-9B43-E8CAB543EC0C}|zad8.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Default.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Default.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Default.aspx.designer.cs",
+              "RelativeToolTip": "Default.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:20:20.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Login.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Login.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Login.aspx.designer.cs",
+              "RelativeToolTip": "Login.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:19:28.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Default.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Default.aspx.cs",
+              "RelativeDocumentMoniker": "Default.aspx.cs",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Default.aspx.cs",
+              "RelativeToolTip": "Default.aspx.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:18:15.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Default.aspx",
+              "RelativeDocumentMoniker": "Default.aspx",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Default.aspx",
+              "RelativeToolTip": "Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-03T17:17:37.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Login.aspx.cs",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Login.aspx.cs",
+              "RelativeToolTip": "Login.aspx.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T17:15:01.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Login.aspx",
+              "RelativeDocumentMoniker": "Login.aspx",
+              "ToolTip": "C:\\Users\\mikid\\OneDrive\\Pulpit\\Studia\\UWr\\ASP.NET\\Lista 3\\zad8\\Login.aspx",
+              "RelativeToolTip": "Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-03T17:14:20.574Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

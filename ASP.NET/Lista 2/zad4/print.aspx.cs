@@ -8,7 +8,6 @@ namespace zad4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Odczyt danych z QueryString
             string name = Request.QueryString["name"];
             string date = Request.QueryString["date"];
             string course = Request.QueryString["course"];
@@ -17,11 +16,10 @@ namespace zad4
 
             if (string.IsNullOrEmpty(name))
             {
-                litOutput.Text = "<p style='color:red;'>Brak danych do wyświetlenia (QueryString pusty).</p>";
+                litOutput.Text = "<p style='color:red;'>Brak danych do wyświetlenia.</p>";
                 return;
             }
 
-            // Składanie HTML
             StringBuilder html = new StringBuilder();
             html.Append("<table>");
             html.Append($"<tr><th>Imię i nazwisko</th><td>{name}</td></tr>");
